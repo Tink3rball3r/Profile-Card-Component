@@ -1,0 +1,233 @@
+html {
+  font-size: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  list-style: none;
+}
+
+span,
+p {
+  color: #6a6f81;
+  font-weight: 400;
+}
+
+h1,
+p,
+span {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 375px) {
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+.card {
+  height: 31.25rem;
+  width: 28.125rem;
+  background: #fafafa;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 19.25rem;
+    height: 25.125rem;
+  }
+}
+
+.card .card-top-pattern {
+  height: 12.5rem;
+  width: 100%;
+  background: url(/images/bg-pattern-card.svg) no-repeat top center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+@media (max-width: 375px) {
+  .card .card-top-pattern {
+    height: 9.5rem;
+  }
+}
+
+.card-picture {
+  position: absolute;
+  top: 9rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 28%;
+  border-radius: 50%;
+  border: 6px solid white;
+}
+
+@media (max-width: 375px) {
+  .card-picture {
+    top: 6rem;
+    width: 35%;
+  }
+}
+
+.card-profile {
+  position: absolute;
+  top: 18rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (max-width: 375px) {
+  .card-profile {
+    top: 13.8rem;
+  }
+}
+
+.card-profile p {
+  margin-top: 0.7rem;
+}
+
+@media (max-width: 375px) {
+  .card-profile p {
+    padding-top: 0.01rem;
+  }
+}
+
+.card-profile span {
+  font-weight: 400;
+}
+
+.card-stats {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 0.01rem solid #aab0ca;
+  padding-top: 2rem;
+}
+
+@media (max-width: 375px) {
+  .card-stats {
+    bottom: 1rem;
+    padding-top: 1.5rem;
+  }
+}
+
+.card-stats .card-stat-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number-titles,
+.card-numbers {
+  text-align: center;
+}
+
+.number-titles {
+  padding-top: 0.5rem;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #19a2ae;
+  height: 100vh;
+  width: 100vw;
+}
+
+.bg-image-top {
+  position: absolute;
+  width: 90rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: -30%;
+  left: -10%;
+  z-index: 1;
+}
+
+@media (max-width: 375px) {
+  .bg-image-top {
+    width: 28rem;
+    top: -25%;
+    left: -60%;
+  }
+}
+
+.bg-image-bottom {
+  position: absolute;
+  width: 100rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  bottom: -65%;
+  right: -10%;
+  z-index: 1;
+}
+
+@media (max-width: 375px) {
+  .bg-image-bottom {
+    width: 33rem;
+    bottom: -30%;
+    right: -90%;
+  }
+}
+
+.card {
+  position: relative;
+  z-index: 200;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 9rem;
+  border: 0.5rem dotted #fafafa;
+  padding: 0.7rem;
+}
+
+@media (max-width: 375px) {
+  .attribution {
+    bottom: 5rem;
+    text-align: center;
+    padding: 0.3rem;
+    border: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,39 @@
+// variables, resets ,globals, and mixins go in here.
+
+// variables
+$bodyColor: hsl(185, 75%, 39%);
+$cardColor: hsl(0, 0%, 98%);
+$primaryFontColor: hsl(229, 23%, 23%);
+$secondaryFontColor: hsl(227, 10%, 46%);
+$kumbhSans: 'Kumbh Sans', sans-serif;
+
+// resets
+html {
+	font-size: 100%;
+	font-family: $kumbhSans;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	list-style: none;
+}
+
+span,
+p {
+	color: $secondaryFontColor;
+	font-weight: 400;
+}
+
+// mixins
+
+@mixin for-phone {
+	@media (max-width: 375px) {
+		@content;
+	}
+}

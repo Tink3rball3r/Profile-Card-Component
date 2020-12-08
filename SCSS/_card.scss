@@ -1,0 +1,121 @@
+// card rules go in here
+
+h1,
+p,
+span {
+	font-size: 1.125rem;
+}
+
+// mobile rules
+@include for-phone {
+	p {
+		font-size: 0.9rem;
+	}
+}
+
+.card {
+	height: 31.25rem;
+	width: 28.125rem;
+	background: $cardColor;
+	border-radius: 20px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+
+	// mobile rules
+	@include for-phone {
+		width: 19.25rem;
+		height: 25.125rem;
+	}
+	.card-top-pattern {
+		height: 12.5rem;
+		width: 100%;
+		background: url(/images/bg-pattern-card.svg) no-repeat top center;
+		background-size: cover;
+		border-radius: 20px 20px 0 0;
+
+		// mobile rules
+		@include for-phone {
+			height: 9.5rem;
+		}
+	}
+}
+
+.card-picture {
+	position: absolute;
+	top: 9rem;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 28%;
+	border-radius: 50%;
+	border: 6px solid lighten($cardColor, 10%);
+
+	// mobile rules
+	@include for-phone {
+		top: 6rem;
+		width: 35%;
+	}
+}
+
+.card-profile {
+	position: absolute;
+	top: 18rem;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-weight: 400;
+
+	// mobile rules
+	@include for-phone {
+		top: 13.8rem;
+	}
+
+	p {
+		margin-top: 0.7rem;
+
+		// mobile rules
+		@include for-phone {
+			padding-top: 0.01rem;
+		}
+	}
+
+	span {
+		font-weight: 400;
+	}
+}
+
+.card-stats {
+	position: absolute;
+	bottom: 3rem;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 0.01rem solid lighten($primaryFontColor, 50%);
+	padding-top: 2rem;
+
+	// mobile rules
+	@include for-phone {
+		bottom: 1rem;
+		padding-top: 1.5rem;
+	}
+
+	.card-stat-info {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+.number-titles,
+.card-numbers {
+	text-align: center;
+}
+
+.number-titles {
+	padding-top: 0.5rem;
+}
