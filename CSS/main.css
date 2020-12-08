@@ -178,35 +178,35 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  top: -30%;
-  left: -10%;
+  top: -30rem;
+  left: -18rem;
   z-index: 1;
 }
 
 @media (max-width: 375px) {
   .bg-image-top {
     width: 28rem;
-    top: -25%;
-    left: -60%;
+    top: -12rem;
+    left: -15rem;
   }
 }
 
 .bg-image-bottom {
   position: absolute;
-  width: 100rem;
+  width: 130rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  bottom: -65%;
-  right: -10%;
+  bottom: -72rem;
+  right: -50rem;
   z-index: 1;
 }
 
 @media (max-width: 375px) {
   .bg-image-bottom {
-    width: 33rem;
-    bottom: -30%;
-    right: -90%;
+    width: 38rem;
+    bottom: -15rem;
+    right: -25rem;
   }
 }
 
@@ -217,14 +217,14 @@ body {
 
 .attribution {
   position: absolute;
-  bottom: 9rem;
+  bottom: 2rem;
   border: 0.5rem dotted #fafafa;
   padding: 0.7rem;
 }
 
 @media (max-width: 375px) {
   .attribution {
-    bottom: 5rem;
+    bottom: 1rem;
     text-align: center;
     padding: 0.3rem;
     border: none;

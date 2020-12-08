@@ -14,31 +14,31 @@ body {
 	position: absolute;
 	width: 90rem;
 	height: fit-content;
-	top: -30%;
-	left: -10%;
+	top: -30rem;
+	left: -18rem;
 	z-index: 1;
 
 	// mobile rules
 	@include for-phone {
 		width: 28rem;
-		top: -25%;
-		left: -60%;
+		top: -12rem;
+		left: -15rem;
 	}
 }
 
 .bg-image-bottom {
 	position: absolute;
-	width: 100rem;
+	width: 130rem;
 	height: fit-content;
-	bottom: -65%;
-	right: -10%;
+	bottom: -72rem;
+	right: -50rem;
 	z-index: 1;
 
 	// mobile rules
 	@include for-phone {
-		width: 33rem;
-		bottom: -30%;
-		right: -90%;
+		width: 38rem;
+		bottom: -15rem;
+		right: -25rem;
 	}
 }
 
@@ -49,13 +49,13 @@ body {
 
 .attribution {
 	position: absolute;
-	bottom: 9rem;
+	bottom: 2rem;
 	border: 0.5rem dotted $cardColor;
 	padding: 0.7rem;
 
 	// mobile rules
 	@include for-phone {
-		bottom: 5rem;
+		bottom: 1rem;
 		text-align: center;
 		padding: 0.3rem;
 		border: none;
